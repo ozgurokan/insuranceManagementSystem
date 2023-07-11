@@ -6,15 +6,15 @@ public class Main {
 
         Manager manager = new Manager();
 
+        // diğer ödevleri yetiştirmek için manager sınıfına sadece login methodu ekledim. şimdilik program kötü görünüyor.
+        User user1 = new User("okan","özdal","ooo@gmail.com","okan","ogrenci",23);
+        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","patika"));
 
-        User user1 = new User("okan","özdal","okanokan1@gmail.com","okanokan1","yazilimci",31);
-        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","Meta"));
+        User user2 = new User("sertap","erener","sertaperener@gmail.com","sertap","sarkici",100);
+        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","sarki"));
 
-        User user2 = new User("sertap","erener","okanokan11@gmail.com","okanokan1","yazilimci",31);
-        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","Meta"));
-
-        User user3 = new User("arsız","dayak","okanokan12@gmail.com","okanokan1","yazilimci",31);
-        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","Meta"));
+        User user3 = new User("nejat","işler","nejatisler@gmail.com","nejat","oyuncu",51);
+        AddressManager.addAddress(user1,new HomeAddress("kaskldjakdsa"),new BusinessAddress("askdsaşl123","kaybedenler kulubu"));
 
         Individual acc1 = new Individual(user1);
         Individual acc2 = new Individual(user2);
